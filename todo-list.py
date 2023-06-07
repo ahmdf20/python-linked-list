@@ -29,9 +29,6 @@ class TodoList:
     while current:
       print(f"{current.data['prioritas']:<10} {current.data['desc']:<25}")
       current = current.next
-    # for i in current:
-    #   print(f"{current.data['desc']:>10} {current.data['prioritas']}")
-    #   current = current.next
 
 todo = TodoList()
 todo.addToFront({"desc": "Mengerjakan Tugas Project 1", "prioritas": 1})
